@@ -4,12 +4,12 @@ app = Flask(__name__)
 empDB = [
 {
 	'id' : '101',
-	'name' : 'Saravanan S',
+	'name' : 'John',
 	'title' : 'Technical Leader' 
 },
 {
 	'id' : '201',
-	'name' : 'Rajkumar P',
+	'name' : 'Tom',
 	'title' : 'Sr Software Engineer'
 }
 ]
@@ -55,12 +55,9 @@ def updateEmp(empID):
 The above code gets the employee id from the URL and finds the respective object.
 It checks the request.json from the request for the new data & then it overwrites 
 the existing. NOTE: the request.json will contain the JSON object set in the client request.
-We can also use a Postman client or cUrl to update an existing employee.  The data 
-must contain the JSON object either with a name or title.The service can be invoked 
-as follows in cUrl.  Here we update the "title" for employee id 201 with "Technical Leader". 
-The request is responded with employee JSON object with updated values.  It also updates the employee DB.
-=======for curl use this=====
-curl -i -H "Content-type: application/json" -X PUT -d "{\"title\":\"Technical Leader\"}" http://127.0.0.1:5000/empDB/employee/201
+We can also use a Postman client or cUrl to update an existing employee. The data 
+must contain the JSON object either with a name or title. 
+The request is responded with employee JSON object with updated values. It also updates the employee DB.
 '''
 
 # POST - to create a new employee inside the database
