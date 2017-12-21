@@ -1,5 +1,6 @@
 # PyFlaskWebService
 Note: This is just for the understanding purpose of RESTful webservice.
+
 The idea is to develop a RESTful Web Service in Python using Flask.
 
 RESTful Web Service is an architectural style, where the data or the structural components of a system is described 
@@ -27,9 +28,9 @@ and then will add the RESTful APIs for each supported operations.
 
 EXECUTION:
 
-When running the flask app, one can open their web browser and check the web server. The server is available in the URL http://localhost:5000/ or else if familiar with cUrl then can also execute the below to check the status:
+When running the web server, one can open their web browser and check the web server. The server is available in the URL http://localhost:5000/ or else if familiar with cUrl then can also execute the below to check the status:
 
-GET method
+GET methods
 
 > $ curl -i http://localhost:5000/
 
@@ -49,4 +50,4 @@ POST method
 
 > $ curl -i -H "Content-type: application/json" -X POST -d "{\"id\":\"301\",\"name\":\"Rama\",\"title\":\"manager\"}"
 
-or else could also use Browser plugins like POSTMAN for the CRUD operations on RESTful web service.
+or else could also use browser plugins like POSTMAN for the CRUD operations on RESTful web service.
